@@ -1,0 +1,131 @@
+\hypertarget{classNormalTree}{}\section{Referencia de la Clase Normal\+Tree}
+\label{classNormalTree}\index{Normal\+Tree@{Normal\+Tree}}
+
+
+La clase \hyperlink{classNormalTree}{Normal\+Tree} contiene las funciones get\+Tronco, get\+Hojas, get\+Ramas; asi como loset sets de estas para obtener y generar las caracteristicas del arbol  Las funciones apuntan a las clases de las partes del arbol, asi como tambien son void.  
+
+
+
+
+{\ttfamily \#include $<$Arbol\+Builder.\+h$>$}
+
+
+
+Diagrama de herencias de Normal\+Tree\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classNormalTree__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración para Normal\+Tree\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classNormalTree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classNormalTree_a5b04a8afd8b44a3e2f82479da865f380}{set\+Tronco} (int size)
+\item 
+void \hyperlink{classNormalTree_a45a0b24a56264362ff1ab0ffa7843f2b}{set\+Hojas} (int size)
+\item 
+void \hyperlink{classNormalTree_aecf407fc3390d3011effea2f8dea464b}{set\+Ramas} (int size)
+\item 
+\hyperlink{classTronco}{Tronco} $\ast$ \hyperlink{classNormalTree_a95dcc1035a23a0142ace79e5f994e85a}{get\+Tronco} ()
+\item 
+\hyperlink{classHoja}{Hoja} $\ast$ \hyperlink{classNormalTree_af856515defde72c7d3350902bfe1cc3e}{get\+Hojas} ()
+\item 
+\hyperlink{classRama}{Rama} $\ast$ \hyperlink{classNormalTree_ad96708fd66844690669bd9d733b41063}{get\+Ramas} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNormalTree_a13483e7c3441eeaedb7fd6d5c6737f3b}\label{classNormalTree_a13483e7c3441eeaedb7fd6d5c6737f3b}} 
+\hyperlink{classTronco}{Tronco} $\ast$ {\bfseries Troncos}
+\item 
+\mbox{\Hypertarget{classNormalTree_aeadff2f44c2e1a2449a92697149aefc1}\label{classNormalTree_aeadff2f44c2e1a2449a92697149aefc1}} 
+\hyperlink{classHoja}{Hoja} $\ast$ {\bfseries Hojas}
+\item 
+\mbox{\Hypertarget{classNormalTree_a9247184649c047af5f905459539e3c61}\label{classNormalTree_a9247184649c047af5f905459539e3c61}} 
+\hyperlink{classRama}{Rama} $\ast$ {\bfseries Ramas}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+La clase \hyperlink{classNormalTree}{Normal\+Tree} contiene las funciones get\+Tronco, get\+Hojas, get\+Ramas; asi como loset sets de estas para obtener y generar las caracteristicas del arbol  Las funciones apuntan a las clases de las partes del arbol, asi como tambien son void. 
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classNormalTree_af856515defde72c7d3350902bfe1cc3e}\label{classNormalTree_af856515defde72c7d3350902bfe1cc3e}} 
+\index{Normal\+Tree@{Normal\+Tree}!get\+Hojas@{get\+Hojas}}
+\index{get\+Hojas@{get\+Hojas}!Normal\+Tree@{Normal\+Tree}}
+\subsubsection{\texorpdfstring{get\+Hojas()}{getHojas()}}
+{\footnotesize\ttfamily \hyperlink{classHoja}{Hoja} $\ast$ Normal\+Tree\+::get\+Hojas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+La funcion get\+Hojas es un puntero a \hyperlink{classTronco}{Tronco}, nos permite obtener las caracteristicas de este. 
+
+Implementa \hyperlink{classTreeBuil_a76ddaf2d79386ffabe5bf17e0c6d887e}{Tree\+Buil}.
+
+\mbox{\Hypertarget{classNormalTree_ad96708fd66844690669bd9d733b41063}\label{classNormalTree_ad96708fd66844690669bd9d733b41063}} 
+\index{Normal\+Tree@{Normal\+Tree}!get\+Ramas@{get\+Ramas}}
+\index{get\+Ramas@{get\+Ramas}!Normal\+Tree@{Normal\+Tree}}
+\subsubsection{\texorpdfstring{get\+Ramas()}{getRamas()}}
+{\footnotesize\ttfamily \hyperlink{classRama}{Rama} $\ast$ Normal\+Tree\+::get\+Ramas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+La funcion get\+Ramas es un puntero a \hyperlink{classTronco}{Tronco}, nos permite obtener las caracteristicas de este. 
+
+Implementa \hyperlink{classTreeBuil_ad8c90d4466a151a8082eeae13400e6cc}{Tree\+Buil}.
+
+\mbox{\Hypertarget{classNormalTree_a95dcc1035a23a0142ace79e5f994e85a}\label{classNormalTree_a95dcc1035a23a0142ace79e5f994e85a}} 
+\index{Normal\+Tree@{Normal\+Tree}!get\+Tronco@{get\+Tronco}}
+\index{get\+Tronco@{get\+Tronco}!Normal\+Tree@{Normal\+Tree}}
+\subsubsection{\texorpdfstring{get\+Tronco()}{getTronco()}}
+{\footnotesize\ttfamily \hyperlink{classTronco}{Tronco} $\ast$ Normal\+Tree\+::get\+Tronco (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+La funcion get\+Tronco es un puntero a \hyperlink{classTronco}{Tronco}, nos permite obtener las caracteristicas de este. 
+
+Implementa \hyperlink{classTreeBuil_a083d65b3e44e233b9a2a9305bcdabb8c}{Tree\+Buil}.
+
+\mbox{\Hypertarget{classNormalTree_a45a0b24a56264362ff1ab0ffa7843f2b}\label{classNormalTree_a45a0b24a56264362ff1ab0ffa7843f2b}} 
+\index{Normal\+Tree@{Normal\+Tree}!set\+Hojas@{set\+Hojas}}
+\index{set\+Hojas@{set\+Hojas}!Normal\+Tree@{Normal\+Tree}}
+\subsubsection{\texorpdfstring{set\+Hojas()}{setHojas()}}
+{\footnotesize\ttfamily void Normal\+Tree\+::set\+Hojas (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+La funcion set\+Hojas recibe el tamano. 
+\begin{DoxyParams}{Parámetros}
+{\em size,nos} & permite definir el tamano pedido. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNormalTree_aecf407fc3390d3011effea2f8dea464b}\label{classNormalTree_aecf407fc3390d3011effea2f8dea464b}} 
+\index{Normal\+Tree@{Normal\+Tree}!set\+Ramas@{set\+Ramas}}
+\index{set\+Ramas@{set\+Ramas}!Normal\+Tree@{Normal\+Tree}}
+\subsubsection{\texorpdfstring{set\+Ramas()}{setRamas()}}
+{\footnotesize\ttfamily void Normal\+Tree\+::set\+Ramas (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+La funcion set\+Ramas recibe el tamano. 
+\begin{DoxyParams}{Parámetros}
+{\em size,nos} & permite definir el tamano pedido. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNormalTree_a5b04a8afd8b44a3e2f82479da865f380}\label{classNormalTree_a5b04a8afd8b44a3e2f82479da865f380}} 
+\index{Normal\+Tree@{Normal\+Tree}!set\+Tronco@{set\+Tronco}}
+\index{set\+Tronco@{set\+Tronco}!Normal\+Tree@{Normal\+Tree}}
+\subsubsection{\texorpdfstring{set\+Tronco()}{setTronco()}}
+{\footnotesize\ttfamily void Normal\+Tree\+::set\+Tronco (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+La funcion set\+Tronco recibe el tamano. 
+\begin{DoxyParams}{Parámetros}
+{\em size,nos} & permite definir el tamano pedido. \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ArbolBuilder_8h}{Arbol\+Builder.\+h}\item 
+Arbol\+Builder.\+cpp\end{DoxyCompactItemize}

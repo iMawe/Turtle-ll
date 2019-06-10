@@ -1,0 +1,102 @@
+\hypertarget{classSnow}{}\section{Referencia de la Clase Snow}
+\label{classSnow}\index{Snow@{Snow}}
+
+
+La clase \hyperlink{classSnow}{Snow} contiene las funciones display para poder visualizarlo, set cant y gv  Se instancia el dato miembro para cantidad, gv para los pixels que recorre por iteracion, un vector de particulas para guardar las que son pedidas por el usuario.  
+
+
+
+
+{\ttfamily \#include $<$Parti\+Flyweight.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSnow_afe2f36ed0e41531355273259e6ad339f}{Snow} (int \+\_\+tam=3)
+\item 
+\hyperlink{classSnow_a8bf279bbf1ddd5b180692797996ce7b5}{$\sim$\+Snow} ()
+\item 
+void \hyperlink{classSnow_a624263662e99a3d80022a86be73588f2}{display} (\hyperlink{classTurtle}{Turtle} T)
+\item 
+void \hyperlink{classSnow_a3cabcbee15d87f551d90be472f1865c4}{setC} (int \+\_\+c)
+\item 
+void \hyperlink{classSnow_a7b77940da35738cd518c5c66d04350cf}{set\+Gv} (int \+\_\+gv)
+\item 
+void \hyperlink{classSnow_a441e42b0e5cee4d21220b243e08b344d}{insert} (int tam)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+La clase \hyperlink{classSnow}{Snow} contiene las funciones display para poder visualizarlo, set cant y gv  Se instancia el dato miembro para cantidad, gv para los pixels que recorre por iteracion, un vector de particulas para guardar las que son pedidas por el usuario. 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classSnow_afe2f36ed0e41531355273259e6ad339f}\label{classSnow_afe2f36ed0e41531355273259e6ad339f}} 
+\index{Snow@{Snow}!Snow@{Snow}}
+\index{Snow@{Snow}!Snow@{Snow}}
+\subsubsection{\texorpdfstring{Snow()}{Snow()}}
+{\footnotesize\ttfamily Snow\+::\+Snow (\begin{DoxyParamCaption}\item[{int}]{\+\_\+tam = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+Constructor. 
+\begin{DoxyParams}{Parámetros}
+{\em \+\_\+tam} & es el tamaño de cada copo de nieve. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSnow_a8bf279bbf1ddd5b180692797996ce7b5}\label{classSnow_a8bf279bbf1ddd5b180692797996ce7b5}} 
+\index{Snow@{Snow}!````~Snow@{$\sim$\+Snow}}
+\index{````~Snow@{$\sim$\+Snow}!Snow@{Snow}}
+\subsubsection{\texorpdfstring{$\sim$\+Snow()}{~Snow()}}
+{\footnotesize\ttfamily Snow\+::$\sim$\+Snow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classSnow_a624263662e99a3d80022a86be73588f2}\label{classSnow_a624263662e99a3d80022a86be73588f2}} 
+\index{Snow@{Snow}!display@{display}}
+\index{display@{display}!Snow@{Snow}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Snow\+::display (\begin{DoxyParamCaption}\item[{\hyperlink{classTurtle}{Turtle}}]{T }\end{DoxyParamCaption})}
+
+La funcion display muestra el objeto. 
+\begin{DoxyParams}{Parámetros}
+{\em T} & recibe la tortuga para que sea utlizada en la funcion. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSnow_a441e42b0e5cee4d21220b243e08b344d}\label{classSnow_a441e42b0e5cee4d21220b243e08b344d}} 
+\index{Snow@{Snow}!insert@{insert}}
+\index{insert@{insert}!Snow@{Snow}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Snow\+::insert (\begin{DoxyParamCaption}\item[{int}]{tam }\end{DoxyParamCaption})}
+
+La funcion insert agrega particulas a nuestro vector. 
+\begin{DoxyParams}{Parámetros}
+{\em tam,tamano} & de las particulas que se van a generar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSnow_a3cabcbee15d87f551d90be472f1865c4}\label{classSnow_a3cabcbee15d87f551d90be472f1865c4}} 
+\index{Snow@{Snow}!setC@{setC}}
+\index{setC@{setC}!Snow@{Snow}}
+\subsubsection{\texorpdfstring{set\+C()}{setC()}}
+{\footnotesize\ttfamily void Snow\+::setC (\begin{DoxyParamCaption}\item[{int}]{\+\_\+c }\end{DoxyParamCaption})}
+
+La funcion setC define la cantidad de copos de nieve que habra en el plano. 
+\begin{DoxyParams}{Parámetros}
+{\em \+\_\+cant} & la cantidad de copos de nieve. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSnow_a7b77940da35738cd518c5c66d04350cf}\label{classSnow_a7b77940da35738cd518c5c66d04350cf}} 
+\index{Snow@{Snow}!set\+Gv@{set\+Gv}}
+\index{set\+Gv@{set\+Gv}!Snow@{Snow}}
+\subsubsection{\texorpdfstring{set\+Gv()}{setGv()}}
+{\footnotesize\ttfamily void Snow\+::set\+Gv (\begin{DoxyParamCaption}\item[{int}]{\+\_\+gv }\end{DoxyParamCaption})}
+
+La funcion set\+Gv define la cantidad de pixeles en la que de nieve que habra en el plano. 
+\begin{DoxyParams}{Parámetros}
+{\em \+\_\+grave} & los pixeles de gravedad que tendra. \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PartiFlyweight_8h}{Parti\+Flyweight.\+h}\item 
+Parti\+Flyweight.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Representación gráfica de la clase" name="Representación gráfica de la clase">
+<area shape="rect" id="node1" href="$classAbstractFact.html" title="La clase AbstractFact contiene funciones virtual&#45;pura &#160;Se realiza con funciones virtual&#45;pura para que..." alt="" coords="5,31,103,57"/>
+<area shape="rect" id="node2" href="$classPrim.html" title="La clase Prim es la clase AbstractFact concreta &#160;Se instancian punteros a cada uno de nuestros objeto..." alt="" coords="152,5,201,32"/>
+<area shape="rect" id="node3" href="$classSeco.html" title="La clase Seco es la clase AbstractFact concreta &#160;Se instancian punteros a cada uno de nuestros objeto..." alt="" coords="151,56,203,83"/>
+</map>

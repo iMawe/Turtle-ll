@@ -1,0 +1,60 @@
+\hypertarget{classDirector}{}\section{Referencia de la Clase Director}
+\label{classDirector}\index{Director@{Director}}
+
+
+La clase \hyperlink{classDirector}{Director} cse encarga de recolectar todas las caracteristicas para poder formal lo pedido  Utilizando punteros al arbol, se logra enviar la informacion para su elaboracion.  
+
+
+
+
+{\ttfamily \#include $<$Arbol\+Builder.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classDirector_a08d3ffc5c9323cc649ba603f4b2d0758}{set\+Builder} (\hyperlink{classTreeBuil}{Tree\+Buil} $\ast$new\+Builder)
+\item 
+\hyperlink{classTree}{Tree} $\ast$ \hyperlink{classDirector_aeffbc977843b757e6514c91c2b040074}{get\+Builder} (int a, int b, int c)
+\item 
+\hyperlink{classTree}{Tree} $\ast$ \hyperlink{classDirector_aa05d4a6f7847d53486824d640654a952}{get\+Tree} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+La clase \hyperlink{classDirector}{Director} cse encarga de recolectar todas las caracteristicas para poder formal lo pedido  Utilizando punteros al arbol, se logra enviar la informacion para su elaboracion. 
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classDirector_aeffbc977843b757e6514c91c2b040074}\label{classDirector_aeffbc977843b757e6514c91c2b040074}} 
+\index{Director@{Director}!get\+Builder@{get\+Builder}}
+\index{get\+Builder@{get\+Builder}!Director@{Director}}
+\subsubsection{\texorpdfstring{get\+Builder()}{getBuilder()}}
+{\footnotesize\ttfamily \hyperlink{classTree}{Tree} $\ast$ Director\+::get\+Builder (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+La funcion get\+Builder recibe tres tamanos para la creacion de los objetos y es un puntero a \hyperlink{classTree}{Tree}. 
+\begin{DoxyParams}{Parámetros}
+{\em a,b} & y c crean un arbol base de la forma ramas, tronco y hojas respectivamente. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDirector_aa05d4a6f7847d53486824d640654a952}\label{classDirector_aa05d4a6f7847d53486824d640654a952}} 
+\index{Director@{Director}!get\+Tree@{get\+Tree}}
+\index{get\+Tree@{get\+Tree}!Director@{Director}}
+\subsubsection{\texorpdfstring{get\+Tree()}{getTree()}}
+{\footnotesize\ttfamily \hyperlink{classTree}{Tree} $\ast$ Director\+::get\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+La funcion get\+Tree es un puntero a \hyperlink{classTree}{Tree}, la cual nos permite obtener la informacion para la creacion del arbol \mbox{\Hypertarget{classDirector_a08d3ffc5c9323cc649ba603f4b2d0758}\label{classDirector_a08d3ffc5c9323cc649ba603f4b2d0758}} 
+\index{Director@{Director}!set\+Builder@{set\+Builder}}
+\index{set\+Builder@{set\+Builder}!Director@{Director}}
+\subsubsection{\texorpdfstring{set\+Builder()}{setBuilder()}}
+{\footnotesize\ttfamily void Director\+::set\+Builder (\begin{DoxyParamCaption}\item[{\hyperlink{classTreeBuil}{Tree\+Buil} $\ast$}]{new\+Builder }\end{DoxyParamCaption})}
+
+La funcion set\+Builder envia las caracteristicas definidas. 
+\begin{DoxyParams}{Parámetros}
+{\em new\+Builder} & es un puntor a Builder, para que las caracteristicas sean enviadas directamente. \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ArbolBuilder_8h}{Arbol\+Builder.\+h}\item 
+Arbol\+Builder.\+cpp\end{DoxyCompactItemize}

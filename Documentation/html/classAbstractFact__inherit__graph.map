@@ -1,0 +1,4 @@
+<map id="AbstractFact" name="AbstractFact">
+<area shape="rect" id="node2" href="$classPrim.html" title="La clase Prim es la clase AbstractFact concreta &#160;Se instancian punteros a cada uno de nuestros objeto..." alt="" coords="5,80,55,107"/>
+<area shape="rect" id="node3" href="$classSeco.html" title="La clase Seco es la clase AbstractFact concreta &#160;Se instancian punteros a cada uno de nuestros objeto..." alt="" coords="79,80,131,107"/>
+</map>
