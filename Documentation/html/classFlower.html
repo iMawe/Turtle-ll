@@ -67,7 +67,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>La clase <a class="el" href="classFlower.html" title="La clase Flower contiene la funcion drawn para poder visualizarlo  Se instancia el dato miembro...">Flower</a> contiene la funcion drawn para poder visualizarlo  Se instancia el dato miembro.  
+<p>La clase <a class="el" href="classFlower.html" title="La clase Flower es abstracta, contiene la funcion drawn para poder cambiar de color  Se instancia el ...">Flower</a> es abstracta, contiene la funcion drawn para poder cambiar de color  Se instancia el dato miembro.  
  <a href="classFlower.html#details">Más...</a></p>
 
 <p><code>#include &lt;<a class="el" href="FlorFactoryM_8h_source.html">FlorFactoryM.h</a>&gt;</code></p>
@@ -86,6 +86,8 @@ Diagrama de herencias de Flower</div>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:af01eea570f9d02e16cda1d86ee97633c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlower.html#af01eea570f9d02e16cda1d86ee97633c">drawn</a> (<a class="el" href="classTurtle.html">Turtle</a> T, int x, int y)=0</td></tr>
 <tr class="separator:af01eea570f9d02e16cda1d86ee97633c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23dd402c7227bf81c42d7e57772c15bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlower.html#a23dd402c7227bf81c42d7e57772c15bf">drawColor</a> (<a class="el" href="classTurtle.html">Turtle</a> T)=0</td></tr>
+<tr class="separator:a23dd402c7227bf81c42d7e57772c15bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Atributos protegidos</h2></td></tr>
@@ -94,8 +96,43 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>petalos</b></td></tr>
 <tr class="separator:a219dc895fadc1d1c8850d205cae4f9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock"><p>La clase <a class="el" href="classFlower.html" title="La clase Flower contiene la funcion drawn para poder visualizarlo  Se instancia el dato miembro...">Flower</a> contiene la funcion drawn para poder visualizarlo  Se instancia el dato miembro. </p>
+<div class="textblock"><p>La clase <a class="el" href="classFlower.html" title="La clase Flower es abstracta, contiene la funcion drawn para poder cambiar de color  Se instancia el ...">Flower</a> es abstracta, contiene la funcion drawn para poder cambiar de color  Se instancia el dato miembro. </p>
+<p>La clase <a class="el" href="classFlower.html" title="La clase Flower es abstracta, contiene la funcion drawn para poder cambiar de color  Se instancia el ...">Flower</a> es abstracta, contiene la funcion drawn para poder visualizarlo  Se instancia el dato miembro petalos. </p>
 </div><h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a id="a23dd402c7227bf81c42d7e57772c15bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23dd402c7227bf81c42d7e57772c15bf">&#9670;&nbsp;</a></span>drawColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Flower::drawColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTurtle.html">Turtle</a>&#160;</td>
+          <td class="paramname"><em>T</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Funcion drawnColor. </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T,nos</td><td>permite hacer uso de la tortuga </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="classFlorNormal.html#a0ae303fc4e8528a3bd8f69e62a8b32c4">FlorNormal</a>, <a class="el" href="classFlorMala.html#a23657c9a53aa5823c03c688d52d56e21">FlorMala</a> y <a class="el" href="classFlorBonita.html#a22345f27b2f33479d5d5b89cd7add93b">FlorBonita</a>.</p>
+
+</div>
+</div>
 <a id="af01eea570f9d02e16cda1d86ee97633c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af01eea570f9d02e16cda1d86ee97633c">&#9670;&nbsp;</a></span>drawn()</h2>
 
@@ -137,12 +174,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>petalos</b></td></tr>
 </div><div class="memdoc">
 <p>Funcion para drawn. </p><dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">T,nos</td><td>permite hacer uso de la tortuga y x, y coordinan el tamano del tronco </td></tr>
+    <tr><td class="paramname">T,nos</td><td>permite hacer uso de la tortuga y (x, y) coordinan la coordenada de la flor </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implementado en <a class="el" href="classFlorNormal.html#a2e8ae341ef8bea1459baa12966eb1cd2">FlorNormal</a>, <a class="el" href="classFlorMala.html#aee0f20f3aa80d9ce3cb9c6fdbf036a7c">FlorMala</a> y <a class="el" href="classFlorBonita.html#a028f32ccf00bb677f54349afa49657e4">FlorBonita</a>.</p>
+<p>Implementado en <a class="el" href="classFlorNormal.html#a615fc2015eeeaccd06d125d28efbd91c">FlorNormal</a>, <a class="el" href="classFlorMala.html#aee0f20f3aa80d9ce3cb9c6fdbf036a7c">FlorMala</a> y <a class="el" href="classFlorBonita.html#a028f32ccf00bb677f54349afa49657e4">FlorBonita</a>.</p>
 
 </div>
 </div>

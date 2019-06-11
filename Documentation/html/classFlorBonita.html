@@ -66,7 +66,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>La clase <a class="el" href="classFlorBonita.html" title="La clase FlorBonita contiene la funcion drawn para poder visualizarlo, hereda de la clase Flower  Se ...">FlorBonita</a> contiene la funcion drawn para poder visualizarlo, hereda de la clase <a class="el" href="classFlower.html" title="La clase Flower contiene la funcion drawn para poder visualizarlo  Se instancia el dato miembro...">Flower</a>  Se tiene constructor y destructor.  
+<p>La clase <a class="el" href="classFlorBonita.html" title="La clase FlorBonita contiene la funcion drawn para poder visualizarlo, hereda de la clase Flower  Se ...">FlorBonita</a> contiene la funcion drawn para poder visualizarlo, hereda de la clase <a class="el" href="classFlower.html" title="La clase Flower es abstracta, contiene la funcion drawn para poder cambiar de color  Se instancia el ...">Flower</a>  Se instancia el dato miembro, se crea un puntero a la clase <a class="el" href="classColorImpl.html">ColorImpl</a> para que se pueda escoger el color.  
  <a href="classFlorBonita.html#details">Más...</a></p>
 
 <p><code>#include &lt;<a class="el" href="FlorFactoryM_8h_source.html">FlorFactoryM.h</a>&gt;</code></p>
@@ -75,7 +75,7 @@ Diagrama de herencias de FlorBonita</div>
 <div class="dyncontent">
 <div class="center"><img src="classFlorBonita__inherit__graph.png" border="0" usemap="#FlorBonita_inherit__map" alt="Inheritance graph"/></div>
 <map name="FlorBonita_inherit__map" id="FlorBonita_inherit__map">
-<area shape="rect" id="node2" href="classFlower.html" title="La clase Flower contiene la funcion drawn para poder visualizarlo &#160;Se instancia el dato miembro..." alt="" coords="15,5,77,32"/>
+<area shape="rect" id="node2" href="classFlower.html" title="La clase Flower es abstracta, contiene la funcion drawn para poder cambiar de color &#160;Se instancia el ..." alt="" coords="15,5,77,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
 <div class="dynheader">
@@ -83,18 +83,20 @@ Diagrama de colaboración para FlorBonita:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFlorBonita__coll__graph.png" border="0" usemap="#FlorBonita_coll__map" alt="Collaboration graph"/></div>
 <map name="FlorBonita_coll__map" id="FlorBonita_coll__map">
-<area shape="rect" id="node2" href="classFlower.html" title="La clase Flower contiene la funcion drawn para poder visualizarlo &#160;Se instancia el dato miembro..." alt="" coords="15,5,77,32"/>
+<area shape="rect" id="node2" href="classFlower.html" title="La clase Flower es abstracta, contiene la funcion drawn para poder cambiar de color &#160;Se instancia el ..." alt="" coords="15,5,77,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
-<tr class="memitem:afccba3e47c8f7ad9e6da420aeba9769f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlorBonita.html#afccba3e47c8f7ad9e6da420aeba9769f">FlorBonita</a> (int petal)</td></tr>
-<tr class="separator:afccba3e47c8f7ad9e6da420aeba9769f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf57e9ccb82d679283c80b7286ed47e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlorBonita.html#a8cf57e9ccb82d679283c80b7286ed47e">FlorBonita</a> (int petal, <a class="el" href="classColorImpl.html">ColorImpl</a> *Implementor)</td></tr>
+<tr class="separator:a8cf57e9ccb82d679283c80b7286ed47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada709e8050834cb8d988b5ba1bc558dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlorBonita.html#ada709e8050834cb8d988b5ba1bc558dc">~FlorBonita</a> ()</td></tr>
 <tr class="separator:ada709e8050834cb8d988b5ba1bc558dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a028f32ccf00bb677f54349afa49657e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlorBonita.html#a028f32ccf00bb677f54349afa49657e4">drawn</a> (<a class="el" href="classTurtle.html">Turtle</a> T, int x, int y)</td></tr>
 <tr class="separator:a028f32ccf00bb677f54349afa49657e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22345f27b2f33479d5d5b89cd7add93b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlorBonita.html#a22345f27b2f33479d5d5b89cd7add93b">drawColor</a> (<a class="el" href="classTurtle.html">Turtle</a> T)</td></tr>
+<tr class="separator:a22345f27b2f33479d5d5b89cd7add93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Otros miembros heredados</h2></td></tr>
@@ -104,10 +106,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>petalos</b></td></tr>
 <tr class="separator:a219dc895fadc1d1c8850d205cae4f9a2 inherit pro_attribs_classFlower"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock"><p>La clase <a class="el" href="classFlorBonita.html" title="La clase FlorBonita contiene la funcion drawn para poder visualizarlo, hereda de la clase Flower  Se ...">FlorBonita</a> contiene la funcion drawn para poder visualizarlo, hereda de la clase <a class="el" href="classFlower.html" title="La clase Flower contiene la funcion drawn para poder visualizarlo  Se instancia el dato miembro...">Flower</a>  Se tiene constructor y destructor. </p>
+<div class="textblock"><p>La clase <a class="el" href="classFlorBonita.html" title="La clase FlorBonita contiene la funcion drawn para poder visualizarlo, hereda de la clase Flower  Se ...">FlorBonita</a> contiene la funcion drawn para poder visualizarlo, hereda de la clase <a class="el" href="classFlower.html" title="La clase Flower es abstracta, contiene la funcion drawn para poder cambiar de color  Se instancia el ...">Flower</a>  Se instancia el dato miembro, se crea un puntero a la clase <a class="el" href="classColorImpl.html">ColorImpl</a> para que se pueda escoger el color. </p>
 </div><h2 class="groupheader">Documentación del constructor y destructor</h2>
-<a id="afccba3e47c8f7ad9e6da420aeba9769f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afccba3e47c8f7ad9e6da420aeba9769f">&#9670;&nbsp;</a></span>FlorBonita()</h2>
+<a id="a8cf57e9ccb82d679283c80b7286ed47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf57e9ccb82d679283c80b7286ed47e">&#9670;&nbsp;</a></span>FlorBonita()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -116,14 +118,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>petalos</b></td></tr>
           <td class="memname">FlorBonita::FlorBonita </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>petal</em></td><td>)</td>
+          <td class="paramname"><em>petal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classColorImpl.html">ColorImpl</a> *&#160;</td>
+          <td class="paramname"><em>Implementor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Constructor. </p><dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">petal</td><td>es la cantidad de petalos que tiene la flor. </td></tr>
+    <tr><td class="paramname">petal,Implementor</td><td>es la cantidad de petalos que tiene la flor y un puntero a <a class="el" href="classColorImpl.html">ColorImpl</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -149,6 +161,40 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>petalos</b></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a id="a22345f27b2f33479d5d5b89cd7add93b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22345f27b2f33479d5d5b89cd7add93b">&#9670;&nbsp;</a></span>drawColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlorBonita::drawColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTurtle.html">Turtle</a>&#160;</td>
+          <td class="paramname"><em>T</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Funcion drawnColor. </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T,nos</td><td>permite hacer uso de la tortuga </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classFlower.html#a23dd402c7227bf81c42d7e57772c15bf">Flower</a>.</p>
+
+</div>
+</div>
 <a id="a028f32ccf00bb677f54349afa49657e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a028f32ccf00bb677f54349afa49657e4">&#9670;&nbsp;</a></span>drawn()</h2>
 
@@ -190,7 +236,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>petalos</b></td></tr>
 </div><div class="memdoc">
 <p>La funcion drawn recibe la tortuga y el tamano. </p><dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">T,nos</td><td>permite hacer uso de la tortuga y x, y coordinan el tamano del tronco. </td></tr>
+    <tr><td class="paramname">T,nos</td><td>permite hacer uso de la tortuga y x, y coordinan la ubicacion de la flor. </td></tr>
   </table>
   </dd>
 </dl>

@@ -2,7 +2,7 @@
 \label{classFlorNormal}\index{Flor\+Normal@{Flor\+Normal}}
 
 
-La clase \hyperlink{classFlorNormal}{Flor\+Normal} contiene tla funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se instancia el dato miembro.  
+La clase \hyperlink{classFlorNormal}{Flor\+Normal} contiene tla funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se instancia el dato miembro, se crea un puntero a la clase \hyperlink{classColorImpl}{Color\+Impl} para que se pueda escoger el color.  
 
 
 
@@ -11,7 +11,8 @@ La clase \hyperlink{classFlorNormal}{Flor\+Normal} contiene tla funcion drawn pa
 
 
 
-Diagrama de herencias de Flor\+Normal\nopagebreak
+Diagrama de herencias de Flor\+Normal
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,8 @@ Diagrama de herencias de Flor\+Normal\nopagebreak
 \end{figure}
 
 
-Diagrama de colaboración para Flor\+Normal\+:\nopagebreak
+Diagrama de colaboración para Flor\+Normal\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,28 +32,30 @@ Diagrama de colaboración para Flor\+Normal\+:\nopagebreak
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classFlorNormal_a625a13a2e2d334eceb295ef994637d25}{Flor\+Normal} (int petal)
+\hyperlink{classFlorNormal_a61f96415a64353a8863fc7969353f94e}{Flor\+Normal} (int petal, \hyperlink{classColorImpl}{Color\+Impl} $\ast$Implementor)
 \item 
 \hyperlink{classFlorNormal_a96ed2aba6c2f54bd4312330ad1d56d42}{$\sim$\+Flor\+Normal} ()
 \item 
-void \hyperlink{classFlorNormal_a2e8ae341ef8bea1459baa12966eb1cd2}{drawn} (\hyperlink{classTurtle}{Turtle} p, int x, int y)
+void \hyperlink{classFlorNormal_a615fc2015eeeaccd06d125d28efbd91c}{drawn} (\hyperlink{classTurtle}{Turtle} T, int x, int y)
+\item 
+void \hyperlink{classFlorNormal_a0ae303fc4e8528a3bd8f69e62a8b32c4}{draw\+Color} (\hyperlink{classTurtle}{Turtle} T)
 \end{DoxyCompactItemize}
 \subsection*{Otros miembros heredados}
 
 
 \subsection{Descripción detallada}
-La clase \hyperlink{classFlorNormal}{Flor\+Normal} contiene tla funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se instancia el dato miembro. 
+La clase \hyperlink{classFlorNormal}{Flor\+Normal} contiene tla funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se instancia el dato miembro, se crea un puntero a la clase \hyperlink{classColorImpl}{Color\+Impl} para que se pueda escoger el color. 
 
 \subsection{Documentación del constructor y destructor}
-\mbox{\Hypertarget{classFlorNormal_a625a13a2e2d334eceb295ef994637d25}\label{classFlorNormal_a625a13a2e2d334eceb295ef994637d25}} 
+\mbox{\Hypertarget{classFlorNormal_a61f96415a64353a8863fc7969353f94e}\label{classFlorNormal_a61f96415a64353a8863fc7969353f94e}} 
 \index{Flor\+Normal@{Flor\+Normal}!Flor\+Normal@{Flor\+Normal}}
 \index{Flor\+Normal@{Flor\+Normal}!Flor\+Normal@{Flor\+Normal}}
 \subsubsection{\texorpdfstring{Flor\+Normal()}{FlorNormal()}}
-{\footnotesize\ttfamily Flor\+Normal\+::\+Flor\+Normal (\begin{DoxyParamCaption}\item[{int}]{petal }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Flor\+Normal\+::\+Flor\+Normal (\begin{DoxyParamCaption}\item[{int}]{petal,  }\item[{\hyperlink{classColorImpl}{Color\+Impl} $\ast$}]{Implementor }\end{DoxyParamCaption})}
 
 Constructor. 
 \begin{DoxyParams}{Parámetros}
-{\em petal} & es la cantidad de petalos que tiene la flor. \\
+{\em petal,Implementor} & es la cantidad de petalos que tiene la flor y un puntero a \hyperlink{classColorImpl}{Color\+Impl}. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classFlorNormal_a96ed2aba6c2f54bd4312330ad1d56d42}\label{classFlorNormal_a96ed2aba6c2f54bd4312330ad1d56d42}} 
@@ -63,15 +67,30 @@ Constructor.
 Destructor 
 
 \subsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{classFlorNormal_a2e8ae341ef8bea1459baa12966eb1cd2}\label{classFlorNormal_a2e8ae341ef8bea1459baa12966eb1cd2}} 
+\mbox{\Hypertarget{classFlorNormal_a0ae303fc4e8528a3bd8f69e62a8b32c4}\label{classFlorNormal_a0ae303fc4e8528a3bd8f69e62a8b32c4}} 
+\index{Flor\+Normal@{Flor\+Normal}!draw\+Color@{draw\+Color}}
+\index{draw\+Color@{draw\+Color}!Flor\+Normal@{Flor\+Normal}}
+\subsubsection{\texorpdfstring{draw\+Color()}{drawColor()}}
+{\footnotesize\ttfamily void Flor\+Normal\+::draw\+Color (\begin{DoxyParamCaption}\item[{\hyperlink{classTurtle}{Turtle}}]{T }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Funcion drawn\+Color. 
+\begin{DoxyParams}{Parámetros}
+{\em T,nos} & permite hacer uso de la tortuga \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{classFlower_a23dd402c7227bf81c42d7e57772c15bf}{Flower}.
+
+\mbox{\Hypertarget{classFlorNormal_a615fc2015eeeaccd06d125d28efbd91c}\label{classFlorNormal_a615fc2015eeeaccd06d125d28efbd91c}} 
 \index{Flor\+Normal@{Flor\+Normal}!drawn@{drawn}}
 \index{drawn@{drawn}!Flor\+Normal@{Flor\+Normal}}
 \subsubsection{\texorpdfstring{drawn()}{drawn()}}
-{\footnotesize\ttfamily void Flor\+Normal\+::drawn (\begin{DoxyParamCaption}\item[{\hyperlink{classTurtle}{Turtle}}]{p,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Flor\+Normal\+::drawn (\begin{DoxyParamCaption}\item[{\hyperlink{classTurtle}{Turtle}}]{T,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 La funcion drawn recibe la tortuga y el tamano. 
 \begin{DoxyParams}{Parámetros}
-{\em T,nos} & permite hacer uso de la tortuga y x, y coordinan el tamano del tronco. \\
+{\em T,nos} & permite hacer uso de la tortuga y x, y coordinan la ubicacion de la flor. \\
 \hline
 \end{DoxyParams}
 

@@ -21,32 +21,54 @@ dibujado
 
 #include "Turtle.h"
 
+
+/**
+* @class   Flower
+* @brief   La clase Flower es abstracta, contiene la funcion drawn para poder cambiar de color
+* @detail  Se instancia el dato miembro 
+*/
 class ColorImpl{
 public:
+
+/** Funcion SetColor.
+ *  @param T, nos permite hacer uso de la tortuga para realizar el cambio de color, es una funcion virtual igualada a 0
+ */
     virtual void SetColor(Turtle T) = 0;
 };
 
-// ConcreteImplementor A
-class ColorBlueImpl: public ColorImpl {
+/**
+* @class   ColorBlueImpl
+* @brief   La clase ColorBlueImpl contiene la funcion drawn para poder cambiar de color
+* @detail  Se instancia el dato miembro 
+*/
+class ColorBlueImpl: public ColorImpl{
 public:
-    void SetColor(Turtle T) {
-        T.set_color(0, 0, 255);//Blue
-    }
+
+/** Funcion SetColor.
+ *  @param T, nos permite hacer uso de la tortuga para realizar el cambio de color
+ */
+    void SetColor(Turtle T);
 };
 
-// ConcreteImplementor B
-class ColorRedImpl: public ColorImpl {
+/**
+* @class   ColorRedImpl
+* @brief   La clase ColorRedImpl contiene la funcion drawn para poder cambiar de color
+* @detail  Se instancia el dato miembro 
+*/
+class ColorRedImpl: public ColorImpl{
 public:
-    void SetColor(Turtle T) {
-        T.set_color(255, 0, 0);//Red
-    }
+
+/** Funcion SetColor.
+ *  @param T, nos permite hacer uso de la tortuga para realizar el cambio de color
+ */
+    void SetColor(Turtle T);
 };
 
 
 /**
 * @class   Flower
-* @brief   La clase Flower contiene la funcion drawn para poder visualizarlo
-* @detail  Se instancia el dato miembro 
+* @brief   La clase Flower es abstracta, contiene la funcion drawn para poder visualizarlo
+* @detail  Se instancia el dato miembro petalos
 */
 class Flower{
 protected:
@@ -54,46 +76,42 @@ protected:
 
 public:
 /** Funcion para drawn.
- *  @param T, nos permite hacer uso de la tortuga y x, y coordinan el tamano del tronco
+ *  @param T, nos permite hacer uso de la tortuga y (x, y) coordinan la coordenada de la flor
  */
     virtual void drawn(Turtle T,int x,int y) = 0;
 
+/** Funcion drawnColor.
+ *  @param T, nos permite hacer uso de la tortuga
+ */
     virtual void drawColor(Turtle T) = 0; // low-level
-
-    //virtual void resize(double pct) = 0; // high-level
 
 };
 
 /**
 * @class   FlorBonita
 * @brief   La clase FlorBonita contiene la funcion drawn para poder visualizarlo, hereda de la clase Flower
-* @detail  Se tiene constructor y destructor
+* @detail  Se instancia el dato miembro, se crea un puntero a la clase ColorImpl para que se pueda escoger el color 
 */
 class FlorBonita:public Flower{
 public:
 /** Constructor.
- *  @param petal es la cantidad de petalos que tiene la flor.
+ *  @param petal, Implementor es la cantidad de petalos que tiene la flor y un puntero a ColorImpl.
  */
-    FlorBonita(int petal, double s, ColorImpl *Implementor);
+    FlorBonita(int petal, ColorImpl *Implementor);
 /** Destructor
  */
     ~FlorBonita();
 /** La funcion drawn recibe la tortuga y el tamano.
- *  @param T, nos permite hacer uso de la tortuga y x, y coordinan el tamano del tronco.
+ *  @param T, nos permite hacer uso de la tortuga y x, y coordinan la ubicacion de la flor.
  */
     void drawn(Turtle T,int x,int y);
 
-    // low-level i.e. Implementation specific
-    void drawColor(Turtle T) {
-        drawingImplementor->SetColor(T);
-    }
+/** Funcion drawnColor.
+ *  @param T, nos permite hacer uso de la tortuga
+ */
+    void drawColor(Turtle T);
 
-    // high-level i.e. Abstraction specific
-    /*void resize(double pct) {
-        side *= pct;
-    }*/
 private:
-    double side;
     ColorImpl *drawingImplementor;
 };
 
@@ -101,32 +119,28 @@ private:
 /**
 * @class   FlorMala
 * @brief   La clase FlorMala contiene tla funcion drawn para poder visualizarlo, hereda de la clase Flower
-* @detail  Se instancia el dato miembro 
+* @detail  Se instancia el dato miembro, se crea un puntero a la clase ColorImpl para que se pueda escoger el color 
 */
 class FlorMala :public Flower{
 public:
 /** Constructor.
- *  @param petal es la cantidad de petalos que tiene la flor.
+ *  @param petal, Implementor es la cantidad de petalos que tiene la flor y un puntero a ColorImpl.
  */
-    FlorMala(int petal, double s, ColorImpl *Implementor);
+    FlorMala(int petal, ColorImpl *Implementor);
 /** Destructor
  */
     ~FlorMala();
 /** La funcion drawn recibe la tortuga y el tamano.
- *  @param T, nos permite hacer uso de la tortuga y x, y coordinan el tamano del tronco.
+ *  @param T, nos permite hacer uso de la tortuga y x, y coordinan la ubicacion de la flor.
  */
     void drawn(Turtle T,int x,int y);
 
-    void drawColor(Turtle T) {
-        drawingImplementor->SetColor(T);
-    }
+/** Funcion drawnColor.
+ *  @param T, nos permite hacer uso de la tortuga
+ */
+    void drawColor(Turtle T);
 
-    // high-level i.e. Abstraction specific
-    /*void resize(double pct) {
-        side *= pct;
-    }*/
 private:
-    double side;
     ColorImpl *drawingImplementor;
     
 };
@@ -134,32 +148,28 @@ private:
 /**
 * @class   FlorNormal
 * @brief   La clase FlorNormal contiene tla funcion drawn para poder visualizarlo, hereda de la clase Flower
-* @detail  Se instancia el dato miembro 
+* @detail  Se instancia el dato miembro, se crea un puntero a la clase ColorImpl para que se pueda escoger el color 
 */
 class FlorNormal:public Flower{
 public:
 /** Constructor.
- *  @param petal es la cantidad de petalos que tiene la flor.
+ *  @param petal, Implementor es la cantidad de petalos que tiene la flor y un puntero a ColorImpl.
  */
-    FlorNormal(int petal, double s, ColorImpl *Implementor);
+    FlorNormal(int petal, ColorImpl *Implementor);
 /** Destructor
  */
     ~FlorNormal();
 /** La funcion drawn recibe la tortuga y el tamano.
- *  @param T, nos permite hacer uso de la tortuga y x, y coordinan el tamano del tronco.
+ *  @param T, nos permite hacer uso de la tortuga y x, y coordinan la ubicacion de la flor.
  */
     void drawn(Turtle T,int x,int y);
 
-    void drawColor(Turtle T) {
-        drawingImplementor->SetColor(T);
-    }
+/** Funcion drawnColor.
+ *  @param T, nos permite hacer uso de la tortuga
+ */
+    void drawColor(Turtle T);
 
-    // high-level i.e. Abstraction specific
-    /*void resize(double pct) {
-        side *= pct;
-    }*/
 private:
-    double side;
     ColorImpl *drawingImplementor;
     
 };

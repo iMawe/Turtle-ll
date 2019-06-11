@@ -2,7 +2,7 @@
 \label{classFlower}\index{Flower@{Flower}}
 
 
-La clase \hyperlink{classFlower}{Flower} contiene la funcion drawn para poder visualizarlo  Se instancia el dato miembro.  
+La clase \hyperlink{classFlower}{Flower} es abstracta, contiene la funcion drawn para poder cambiar de color  Se instancia el dato miembro.  
 
 
 
@@ -11,7 +11,8 @@ La clase \hyperlink{classFlower}{Flower} contiene la funcion drawn para poder vi
 
 
 
-Diagrama de herencias de Flower\nopagebreak
+Diagrama de herencias de Flower
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,6 +23,8 @@ Diagrama de herencias de Flower\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 virtual void \hyperlink{classFlower_af01eea570f9d02e16cda1d86ee97633c}{drawn} (\hyperlink{classTurtle}{Turtle} T, int x, int y)=0
+\item 
+virtual void \hyperlink{classFlower_a23dd402c7227bf81c42d7e57772c15bf}{draw\+Color} (\hyperlink{classTurtle}{Turtle} T)=0
 \end{DoxyCompactItemize}
 \subsection*{Atributos protegidos}
 \begin{DoxyCompactItemize}
@@ -32,9 +35,26 @@ int {\bfseries petalos}
 
 
 \subsection{Descripción detallada}
-La clase \hyperlink{classFlower}{Flower} contiene la funcion drawn para poder visualizarlo  Se instancia el dato miembro. 
+La clase \hyperlink{classFlower}{Flower} es abstracta, contiene la funcion drawn para poder cambiar de color  Se instancia el dato miembro. 
+
+La clase \hyperlink{classFlower}{Flower} es abstracta, contiene la funcion drawn para poder visualizarlo  Se instancia el dato miembro petalos. 
 
 \subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classFlower_a23dd402c7227bf81c42d7e57772c15bf}\label{classFlower_a23dd402c7227bf81c42d7e57772c15bf}} 
+\index{Flower@{Flower}!draw\+Color@{draw\+Color}}
+\index{draw\+Color@{draw\+Color}!Flower@{Flower}}
+\subsubsection{\texorpdfstring{draw\+Color()}{drawColor()}}
+{\footnotesize\ttfamily virtual void Flower\+::draw\+Color (\begin{DoxyParamCaption}\item[{\hyperlink{classTurtle}{Turtle}}]{T }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Funcion drawn\+Color. 
+\begin{DoxyParams}{Parámetros}
+{\em T,nos} & permite hacer uso de la tortuga \\
+\hline
+\end{DoxyParams}
+
+
+Implementado en \hyperlink{classFlorNormal_a0ae303fc4e8528a3bd8f69e62a8b32c4}{Flor\+Normal}, \hyperlink{classFlorMala_a23657c9a53aa5823c03c688d52d56e21}{Flor\+Mala} y \hyperlink{classFlorBonita_a22345f27b2f33479d5d5b89cd7add93b}{Flor\+Bonita}.
+
 \mbox{\Hypertarget{classFlower_af01eea570f9d02e16cda1d86ee97633c}\label{classFlower_af01eea570f9d02e16cda1d86ee97633c}} 
 \index{Flower@{Flower}!drawn@{drawn}}
 \index{drawn@{drawn}!Flower@{Flower}}
@@ -43,12 +63,12 @@ La clase \hyperlink{classFlower}{Flower} contiene la funcion drawn para poder vi
 
 Funcion para drawn. 
 \begin{DoxyParams}{Parámetros}
-{\em T,nos} & permite hacer uso de la tortuga y x, y coordinan el tamano del tronco \\
+{\em T,nos} & permite hacer uso de la tortuga y (x, y) coordinan la coordenada de la flor \\
 \hline
 \end{DoxyParams}
 
 
-Implementado en \hyperlink{classFlorNormal_a2e8ae341ef8bea1459baa12966eb1cd2}{Flor\+Normal}, \hyperlink{classFlorMala_aee0f20f3aa80d9ce3cb9c6fdbf036a7c}{Flor\+Mala} y \hyperlink{classFlorBonita_a028f32ccf00bb677f54349afa49657e4}{Flor\+Bonita}.
+Implementado en \hyperlink{classFlorNormal_a615fc2015eeeaccd06d125d28efbd91c}{Flor\+Normal}, \hyperlink{classFlorMala_aee0f20f3aa80d9ce3cb9c6fdbf036a7c}{Flor\+Mala} y \hyperlink{classFlorBonita_a028f32ccf00bb677f54349afa49657e4}{Flor\+Bonita}.
 
 
 

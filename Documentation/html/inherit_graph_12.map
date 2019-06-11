@@ -1,3 +1,4 @@
 <map id="Representación gráfica de la clase" name="Representación gráfica de la clase">
-<area shape="rect" id="node1" href="$classlinked__list_1_1iterator.html" title="linked_list\&lt; T \&gt;::iterator" alt="" coords="5,5,165,32"/>
+<area shape="rect" id="node1" href="$classTreeBuil.html" title="La interfaz TreeBuil contiene las funciones getTronco, getHojas, getRamas para obtener las caracteris..." alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node2" href="$classNormalTree.html" title="La clase NormalTree contiene las funciones getTronco, getHojas, getRamas; asi como loset sets de esta..." alt="" coords="124,5,215,32"/>
 </map>

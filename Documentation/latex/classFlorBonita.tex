@@ -2,7 +2,7 @@
 \label{classFlorBonita}\index{Flor\+Bonita@{Flor\+Bonita}}
 
 
-La clase \hyperlink{classFlorBonita}{Flor\+Bonita} contiene la funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se tiene constructor y destructor.  
+La clase \hyperlink{classFlorBonita}{Flor\+Bonita} contiene la funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se instancia el dato miembro, se crea un puntero a la clase \hyperlink{classColorImpl}{Color\+Impl} para que se pueda escoger el color.  
 
 
 
@@ -11,7 +11,8 @@ La clase \hyperlink{classFlorBonita}{Flor\+Bonita} contiene la funcion drawn par
 
 
 
-Diagrama de herencias de Flor\+Bonita\nopagebreak
+Diagrama de herencias de Flor\+Bonita
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,8 @@ Diagrama de herencias de Flor\+Bonita\nopagebreak
 \end{figure}
 
 
-Diagrama de colaboración para Flor\+Bonita\+:\nopagebreak
+Diagrama de colaboración para Flor\+Bonita\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,28 +32,30 @@ Diagrama de colaboración para Flor\+Bonita\+:\nopagebreak
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classFlorBonita_afccba3e47c8f7ad9e6da420aeba9769f}{Flor\+Bonita} (int petal)
+\hyperlink{classFlorBonita_a8cf57e9ccb82d679283c80b7286ed47e}{Flor\+Bonita} (int petal, \hyperlink{classColorImpl}{Color\+Impl} $\ast$Implementor)
 \item 
 \hyperlink{classFlorBonita_ada709e8050834cb8d988b5ba1bc558dc}{$\sim$\+Flor\+Bonita} ()
 \item 
 void \hyperlink{classFlorBonita_a028f32ccf00bb677f54349afa49657e4}{drawn} (\hyperlink{classTurtle}{Turtle} T, int x, int y)
+\item 
+void \hyperlink{classFlorBonita_a22345f27b2f33479d5d5b89cd7add93b}{draw\+Color} (\hyperlink{classTurtle}{Turtle} T)
 \end{DoxyCompactItemize}
 \subsection*{Otros miembros heredados}
 
 
 \subsection{Descripción detallada}
-La clase \hyperlink{classFlorBonita}{Flor\+Bonita} contiene la funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se tiene constructor y destructor. 
+La clase \hyperlink{classFlorBonita}{Flor\+Bonita} contiene la funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se instancia el dato miembro, se crea un puntero a la clase \hyperlink{classColorImpl}{Color\+Impl} para que se pueda escoger el color. 
 
 \subsection{Documentación del constructor y destructor}
-\mbox{\Hypertarget{classFlorBonita_afccba3e47c8f7ad9e6da420aeba9769f}\label{classFlorBonita_afccba3e47c8f7ad9e6da420aeba9769f}} 
+\mbox{\Hypertarget{classFlorBonita_a8cf57e9ccb82d679283c80b7286ed47e}\label{classFlorBonita_a8cf57e9ccb82d679283c80b7286ed47e}} 
 \index{Flor\+Bonita@{Flor\+Bonita}!Flor\+Bonita@{Flor\+Bonita}}
 \index{Flor\+Bonita@{Flor\+Bonita}!Flor\+Bonita@{Flor\+Bonita}}
 \subsubsection{\texorpdfstring{Flor\+Bonita()}{FlorBonita()}}
-{\footnotesize\ttfamily Flor\+Bonita\+::\+Flor\+Bonita (\begin{DoxyParamCaption}\item[{int}]{petal }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Flor\+Bonita\+::\+Flor\+Bonita (\begin{DoxyParamCaption}\item[{int}]{petal,  }\item[{\hyperlink{classColorImpl}{Color\+Impl} $\ast$}]{Implementor }\end{DoxyParamCaption})}
 
 Constructor. 
 \begin{DoxyParams}{Parámetros}
-{\em petal} & es la cantidad de petalos que tiene la flor. \\
+{\em petal,Implementor} & es la cantidad de petalos que tiene la flor y un puntero a \hyperlink{classColorImpl}{Color\+Impl}. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classFlorBonita_ada709e8050834cb8d988b5ba1bc558dc}\label{classFlorBonita_ada709e8050834cb8d988b5ba1bc558dc}} 
@@ -63,6 +67,21 @@ Constructor.
 Destructor 
 
 \subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classFlorBonita_a22345f27b2f33479d5d5b89cd7add93b}\label{classFlorBonita_a22345f27b2f33479d5d5b89cd7add93b}} 
+\index{Flor\+Bonita@{Flor\+Bonita}!draw\+Color@{draw\+Color}}
+\index{draw\+Color@{draw\+Color}!Flor\+Bonita@{Flor\+Bonita}}
+\subsubsection{\texorpdfstring{draw\+Color()}{drawColor()}}
+{\footnotesize\ttfamily void Flor\+Bonita\+::draw\+Color (\begin{DoxyParamCaption}\item[{\hyperlink{classTurtle}{Turtle}}]{T }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Funcion drawn\+Color. 
+\begin{DoxyParams}{Parámetros}
+{\em T,nos} & permite hacer uso de la tortuga \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{classFlower_a23dd402c7227bf81c42d7e57772c15bf}{Flower}.
+
 \mbox{\Hypertarget{classFlorBonita_a028f32ccf00bb677f54349afa49657e4}\label{classFlorBonita_a028f32ccf00bb677f54349afa49657e4}} 
 \index{Flor\+Bonita@{Flor\+Bonita}!drawn@{drawn}}
 \index{drawn@{drawn}!Flor\+Bonita@{Flor\+Bonita}}
@@ -71,7 +90,7 @@ Destructor
 
 La funcion drawn recibe la tortuga y el tamano. 
 \begin{DoxyParams}{Parámetros}
-{\em T,nos} & permite hacer uso de la tortuga y x, y coordinan el tamano del tronco. \\
+{\em T,nos} & permite hacer uso de la tortuga y x, y coordinan la ubicacion de la flor. \\
 \hline
 \end{DoxyParams}
 

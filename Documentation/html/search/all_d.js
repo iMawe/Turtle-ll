@@ -4,6 +4,7 @@ var searchData=
   ['set_5fcolor',['set_color',['../classTurtle.html#ad4f1cfec231a2d91c529d20c2331168b',1,'Turtle']]],
   ['setbuilder',['setBuilder',['../classDirector.html#a08d3ffc5c9323cc649ba603f4b2d0758',1,'Director']]],
   ['setc',['setC',['../classSnow.html#a3cabcbee15d87f551d90be472f1865c4',1,'Snow']]],
+  ['setcolor',['SetColor',['../classColorImpl.html#a25bf353d46c94dc280eced8d7d566825',1,'ColorImpl::SetColor()'],['../classColorBlueImpl.html#aa18a3e0b37de1bafbd4954fc73df7462',1,'ColorBlueImpl::SetColor()'],['../classColorRedImpl.html#ab094a64f146cc3b6abeea2b60a289f49',1,'ColorRedImpl::SetColor()']]],
   ['setgv',['setGv',['../classSnow.html#a7b77940da35738cd518c5c66d04350cf',1,'Snow']]],
   ['sethojas',['setHojas',['../classNormalTree.html#a45a0b24a56264362ff1ab0ffa7843f2b',1,'NormalTree']]],
   ['setramas',['setRamas',['../classNormalTree.html#aecf407fc3390d3011effea2f8dea464b',1,'NormalTree']]],

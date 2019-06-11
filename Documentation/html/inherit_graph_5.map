@@ -1,3 +1,6 @@
 <map id="Representación gráfica de la clase" name="Representación gráfica de la clase">
-<area shape="rect" id="node1" href="$classDirector.html" title="La clase Director cse encarga de recolectar todas las caracteristicas para poder formal lo pedido &#160;Ut..." alt="" coords="5,5,73,32"/>
+<area shape="rect" id="node1" href="$classFlower.html" title="La clase Flower es abstracta, contiene la funcion drawn para poder cambiar de color &#160;Se instancia el ..." alt="" coords="5,56,67,83"/>
+<area shape="rect" id="node2" href="$classFlorBonita.html" title="La clase FlorBonita contiene la funcion drawn para poder visualizarlo, hereda de la clase Flower &#160;Se ..." alt="" coords="117,5,199,32"/>
+<area shape="rect" id="node3" href="$classFlorMala.html" title="La clase FlorMala contiene tla funcion drawn para poder visualizarlo, hereda de la clase Flower &#160;Se i..." alt="" coords="122,56,194,83"/>
+<area shape="rect" id="node4" href="$classFlorNormal.html" title="La clase FlorNormal contiene tla funcion drawn para poder visualizarlo, hereda de la clase Flower &#160;Se..." alt="" coords="115,107,201,133"/>
 </map>

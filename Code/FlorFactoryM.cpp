@@ -1,8 +1,15 @@
 #include "FlorFactoryM.h"
 
-FlorBonita::FlorBonita(int petal, double s, ColorImpl *Implementor){
+void ColorBlueImpl::SetColor(Turtle T){
+    T.set_color(0, 0, 255);//Blue
+}
+
+void ColorRedImpl::SetColor(Turtle T){
+    T.set_color(255, 0, 0);//Red
+}
+
+FlorBonita::FlorBonita(int petal, ColorImpl *Implementor){
     petalos = petal;
-    side = s;
     drawingImplementor = Implementor;
 }
 FlorBonita::~FlorBonita(){
@@ -17,10 +24,13 @@ void FlorBonita::drawn(Turtle T, int x, int y){
     }
 }
 
+void FlorBonita::drawColor(Turtle T) {
+    drawingImplementor->SetColor(T);
+}
 
-FlorMala::FlorMala(int petal, double s, ColorImpl *Implementor){
+
+FlorMala::FlorMala(int petal, ColorImpl *Implementor){
     petalos = petal;
-    side = s;
     drawingImplementor = Implementor;
 }
 
@@ -37,10 +47,13 @@ void FlorMala::drawn(Turtle T,int x,int y){
     }
 }
 
+void FlorMala::drawColor(Turtle T) {
+    drawingImplementor->SetColor(T);
+}
 
-FlorNormal::FlorNormal(int petal, double s, ColorImpl *Implementor){
+
+FlorNormal::FlorNormal(int petal, ColorImpl *Implementor){
     petalos = petal;
-    side = s;
     drawingImplementor = Implementor;
 }
 FlorNormal::~FlorNormal(){
@@ -53,4 +66,8 @@ void FlorNormal::drawn(Turtle T,int x,int y){
         T.forward(25);
         T.right(60);
     }
+}
+
+void FlorNormal::drawColor(Turtle T) {
+    drawingImplementor->SetColor(T);
 }

@@ -10,7 +10,7 @@ Tree* Prim::getTree(){
 Flower* Prim::getFlor(){
 	Turtle T;
 	ColorImpl* ImplR = new ColorRedImpl();
-	Flower* Flowers = new FlorBonita(6, 1, ImplR);
+	Flower* Flowers = new FlorBonita(6, ImplR);
 	Flowers->drawColor(T);
 	return Flowers;
 }
@@ -30,7 +30,7 @@ Tree* Seco::getTree(){
 Flower* Seco::getFlor(){
 	Turtle T;
 	ColorImpl* ImplB = new ColorBlueImpl();
-	Flower *Flowers = new FlorNormal(6, 2, ImplB);
+	Flower *Flowers = new FlorNormal(6, ImplB);
 	Flowers->drawColor(T);
 	return Flowers;
 }

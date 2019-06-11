@@ -6,14 +6,16 @@ implementacion de la clase \hyperlink{classFlower}{Flower} con el uso de Open\+G
 
 
 {\ttfamily \#include \char`\"{}Turtle.\+h\char`\"{}}\newline
-Dependencia gráfica adjunta para Flor\+Factory\+M.\+h\+:\nopagebreak
+Dependencia gráfica adjunta para Flor\+Factory\+M.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{FlorFactoryM_8h__incl}
 \end{center}
 \end{figure}
-Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:\nopagebreak
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,14 +25,20 @@ Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:
 \subsection*{Clases}
 \begin{DoxyCompactItemize}
 \item 
+class \hyperlink{classColorImpl}{Color\+Impl}
+\item 
+class \hyperlink{classColorBlueImpl}{Color\+Blue\+Impl}
+\begin{DoxyCompactList}\small\item\em La clase \hyperlink{classColorBlueImpl}{Color\+Blue\+Impl} contiene la funcion drawn para poder cambiar de color  Se instancia el dato miembro. \end{DoxyCompactList}\item 
+class \hyperlink{classColorRedImpl}{Color\+Red\+Impl}
+\begin{DoxyCompactList}\small\item\em La clase \hyperlink{classColorRedImpl}{Color\+Red\+Impl} contiene la funcion drawn para poder cambiar de color  Se instancia el dato miembro. \end{DoxyCompactList}\item 
 class \hyperlink{classFlower}{Flower}
-\begin{DoxyCompactList}\small\item\em La clase \hyperlink{classFlower}{Flower} contiene la funcion drawn para poder visualizarlo  Se instancia el dato miembro. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em La clase \hyperlink{classFlower}{Flower} es abstracta, contiene la funcion drawn para poder cambiar de color  Se instancia el dato miembro. \end{DoxyCompactList}\item 
 class \hyperlink{classFlorBonita}{Flor\+Bonita}
-\begin{DoxyCompactList}\small\item\em La clase \hyperlink{classFlorBonita}{Flor\+Bonita} contiene la funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se tiene constructor y destructor. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em La clase \hyperlink{classFlorBonita}{Flor\+Bonita} contiene la funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se instancia el dato miembro, se crea un puntero a la clase \hyperlink{classColorImpl}{Color\+Impl} para que se pueda escoger el color. \end{DoxyCompactList}\item 
 class \hyperlink{classFlorMala}{Flor\+Mala}
-\begin{DoxyCompactList}\small\item\em La clase \hyperlink{classFlorMala}{Flor\+Mala} contiene tla funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se instancia el dato miembro. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em La clase \hyperlink{classFlorMala}{Flor\+Mala} contiene tla funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se instancia el dato miembro, se crea un puntero a la clase \hyperlink{classColorImpl}{Color\+Impl} para que se pueda escoger el color. \end{DoxyCompactList}\item 
 class \hyperlink{classFlorNormal}{Flor\+Normal}
-\begin{DoxyCompactList}\small\item\em La clase \hyperlink{classFlorNormal}{Flor\+Normal} contiene tla funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se instancia el dato miembro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em La clase \hyperlink{classFlorNormal}{Flor\+Normal} contiene tla funcion drawn para poder visualizarlo, hereda de la clase \hyperlink{classFlower}{Flower}  Se instancia el dato miembro, se crea un puntero a la clase \hyperlink{classColorImpl}{Color\+Impl} para que se pueda escoger el color. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
