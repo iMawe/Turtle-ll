@@ -1,7 +1,7 @@
 # Turtle-ll
 
 ## **Update Notes**
-- Create snow with N key, tree with T key, flower with F key, clean with C key.
+- Create snow with N key, tree with T key, red flower with F key, blue flower with G key and clean with C key.
 - Increassing three functions (right, left, backward).
 
 ## **Requirements**
