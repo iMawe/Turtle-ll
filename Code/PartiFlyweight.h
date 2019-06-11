@@ -99,6 +99,7 @@ private:
     int c;
     int gv;
     vector< Particle> S;
+    int tam;
 public:
 /** Constructor.
  *  @param _tam es el tamaño de cada copo de nieve.

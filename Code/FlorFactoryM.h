@@ -21,6 +21,28 @@ dibujado
 
 #include "Turtle.h"
 
+class ColorImpl{
+public:
+    virtual void SetColor(Turtle T) = 0;
+};
+
+// ConcreteImplementor A
+class ColorBlueImpl: public ColorImpl {
+public:
+    void SetColor(Turtle T) {
+        T.set_color(0, 0, 255);//Blue
+    }
+};
+
+// ConcreteImplementor B
+class ColorRedImpl: public ColorImpl {
+public:
+    void SetColor(Turtle T) {
+        T.set_color(255, 0, 0);//Red
+    }
+};
+
+
 /**
 * @class   Flower
 * @brief   La clase Flower contiene la funcion drawn para poder visualizarlo
@@ -35,6 +57,11 @@ public:
  *  @param T, nos permite hacer uso de la tortuga y x, y coordinan el tamano del tronco
  */
     virtual void drawn(Turtle T,int x,int y) = 0;
+
+    virtual void drawColor(Turtle T) = 0; // low-level
+
+    //virtual void resize(double pct) = 0; // high-level
+
 };
 
 /**
@@ -47,7 +74,7 @@ public:
 /** Constructor.
  *  @param petal es la cantidad de petalos que tiene la flor.
  */
-    FlorBonita(int petal);
+    FlorBonita(int petal, double s, ColorImpl *Implementor);
 /** Destructor
  */
     ~FlorBonita();
@@ -55,8 +82,21 @@ public:
  *  @param T, nos permite hacer uso de la tortuga y x, y coordinan el tamano del tronco.
  */
     void drawn(Turtle T,int x,int y);
-    
+
+    // low-level i.e. Implementation specific
+    void drawColor(Turtle T) {
+        drawingImplementor->SetColor(T);
+    }
+
+    // high-level i.e. Abstraction specific
+    /*void resize(double pct) {
+        side *= pct;
+    }*/
+private:
+    double side;
+    ColorImpl *drawingImplementor;
 };
+
 
 /**
 * @class   FlorMala
@@ -68,7 +108,7 @@ public:
 /** Constructor.
  *  @param petal es la cantidad de petalos que tiene la flor.
  */
-    FlorMala(int petal);
+    FlorMala(int petal, double s, ColorImpl *Implementor);
 /** Destructor
  */
     ~FlorMala();
@@ -76,6 +116,18 @@ public:
  *  @param T, nos permite hacer uso de la tortuga y x, y coordinan el tamano del tronco.
  */
     void drawn(Turtle T,int x,int y);
+
+    void drawColor(Turtle T) {
+        drawingImplementor->SetColor(T);
+    }
+
+    // high-level i.e. Abstraction specific
+    /*void resize(double pct) {
+        side *= pct;
+    }*/
+private:
+    double side;
+    ColorImpl *drawingImplementor;
     
 };
 
@@ -89,14 +141,26 @@ public:
 /** Constructor.
  *  @param petal es la cantidad de petalos que tiene la flor.
  */
-    FlorNormal(int petal);
+    FlorNormal(int petal, double s, ColorImpl *Implementor);
 /** Destructor
  */
     ~FlorNormal();
 /** La funcion drawn recibe la tortuga y el tamano.
  *  @param T, nos permite hacer uso de la tortuga y x, y coordinan el tamano del tronco.
  */
-    void drawn(Turtle p,int x,int y);
+    void drawn(Turtle T,int x,int y);
+
+    void drawColor(Turtle T) {
+        drawingImplementor->SetColor(T);
+    }
+
+    // high-level i.e. Abstraction specific
+    /*void resize(double pct) {
+        side *= pct;
+    }*/
+private:
+    double side;
+    ColorImpl *drawingImplementor;
     
 };
 

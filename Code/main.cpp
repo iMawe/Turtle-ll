@@ -7,8 +7,13 @@ void teclado(unsigned char key, int x, int y){
 	Flower* f1 = aux->getFlor();
 	Snow* n1 = aux->getParti();
 
+	AbstractFact* aux1 = new Seco();
+	Tree* t = aux1->getTree();
+	Flower* f = aux1->getFlor();
+	Snow* n = aux1->getParti();
+
 	for(int i = 0; i < 10; i++)
-  	  	n1->insert(10);
+  	  	n1->insert(1);
 	switch (key){
 		case 27:             // ESCAPE key
 		exit (0);
@@ -21,6 +26,9 @@ void teclado(unsigned char key, int x, int y){
 		break;
 	case 'n':
 		n1->display(T);
+		break;
+	case 'g':
+		f->drawn(T, 150, 150);
 		break;
 	case 'c':
 		T.clear();

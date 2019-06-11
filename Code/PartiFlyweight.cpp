@@ -16,7 +16,7 @@ int SnowFly::getTam(){
 
 
 Particle::Particle(int _tam){
-        particle=SnowFly::getInstance();
+        particle = SnowFly::getInstance();
         particle->setTam(_tam);
         tam = _tam;
     }
@@ -43,6 +43,7 @@ void Particle::setXY(int _x,int _y){
 Snow::Snow(int _tam){
     c = 15;
     gv = 1;
+    tam = _tam;
 }
 
 Snow::~Snow(){}
@@ -67,6 +68,6 @@ void Snow::display(Turtle T){
 }
 
 void Snow::insert(int tam){
-    Particle aux = Particle(5);
+    Particle aux = Particle(tam);
     S.push_back(aux);
 }
