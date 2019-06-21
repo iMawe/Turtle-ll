@@ -12,6 +12,8 @@ void teclado(unsigned char key, int x, int y){
 	Flower* f = aux1->getFlor();
 	Snow* n = aux1->getParti();
 
+	int x1, y1;
+
 	for(int i = 0; i < 10; i++)
   	  	n1->insert(1);
 	switch (key){
@@ -19,16 +21,22 @@ void teclado(unsigned char key, int x, int y){
 		exit (0);
 		break;
 	case 't':
-		t1->drawn(T,300,100);
+		cout<< "Posicion: ";
+		cin>> x1>> y1;
+		t1->drawn(T, x1, y1);
 		break;
 	case 'f':
-		f1->drawn(T,100,100);
+		cout<< "Flor Normal posicion: ";
+		cin>> x1>> y1;
+		f1->drawn(T, x1, y1);
 		break;
 	case 'n':
 		n1->display(T);
 		break;
 	case 'g':
-		f->drawn(T, 150, 150);
+		cout<< "Flor Bonita posicion: ";
+		cin>> x1>> y1;
+		f->drawn(T, x1, y1);
 		break;
 	case 'c':
 		T.clear();
